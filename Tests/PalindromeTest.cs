@@ -16,7 +16,7 @@ namespace PalindromeProject.Objects
       string result = instance.GetInitialInput();
 
       //Assert
-      Assert.Equal(true, Palindrome.CheckPalindrome(result));
+      Assert.Equal("Yes, that's a palindrome!", Palindrome.CheckPalindrome(result));
     }
 
     [Fact]
@@ -30,7 +30,7 @@ namespace PalindromeProject.Objects
       string result = instance.GetInitialInput();
 
       //Assert
-      Assert.Equal(true, Palindrome.CheckPalindrome(result));
+      Assert.Equal("Yes, that's a palindrome!", Palindrome.CheckPalindrome(result));
     }
 
   }

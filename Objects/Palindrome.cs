@@ -16,7 +16,7 @@ namespace PalindromeProject.Objects
     {
       return _initialInput;
     }
-    public static bool CheckPalindrome(string userInput)
+    public static string CheckPalindrome(string userInput)
     {
       string input = userInput;
       char[] arrayInput = input.ToCharArray();
@@ -26,11 +26,11 @@ namespace PalindromeProject.Objects
 
       if (userInput == output)
       {
-        return true;
+        return "Yes, that's a palindrome!";
       }
       else
       {
-        return false;
+        return "Nope, that's not a palindrome.";
       }
     }
   }
