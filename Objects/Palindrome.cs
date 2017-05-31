@@ -19,12 +19,13 @@ namespace PalindromeProject.Objects
     public static string CheckPalindrome(string userInput)
     {
       string input = userInput;
-      char[] arrayInput = input.ToCharArray();
+      string newInput = input.Replace(" ", "");
+      Console.WriteLine(newInput);
+      char[] arrayInput = newInput.ToCharArray();
       Array.Reverse(arrayInput);
       string output = string.Join("", arrayInput);
-      Console.WriteLine(output);
 
-      if (userInput == output)
+      if (newInput == output)
       {
         return "Yes, that's a palindrome!";
       }
