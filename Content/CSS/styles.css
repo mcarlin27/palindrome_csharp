@@ -1,0 +1,16 @@
+body {
+  background: #94b8b8;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+h4, h3, p  {
+  text-align: center;
+}
+
+.jumbotron {
+  text-align: center;
+}
