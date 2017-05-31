@@ -16,10 +16,22 @@ namespace PalindromeProject.Objects
     {
       return _initialInput;
     }
-    public static string CheckPalindrome(string userInput)
+    public static bool CheckPalindrome(string userInput)
     {
       string input = userInput;
-      return input;
+      char[] arrayInput = input.ToCharArray();
+      Array.Reverse(arrayInput);
+      string output = string.Join("", arrayInput);
+      Console.WriteLine(output);
+
+      if (userInput == output)
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
     }
   }
 }
